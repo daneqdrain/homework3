@@ -7,14 +7,14 @@ int main()
 	double rub{};
 	int choose{};
 	double dollar = 101.68, euro = 106.1, yuan = 13.43, farit = 37, yena = 0.64;
-	double commision = 0.05;
+	double commision = 0.05, commissionbank = 0;
 	while (true)
 	{
 		system("cls");
 		std::cout << "Конвертер валют\nВведите кол-во рублей для обмена: ";
 		std::cin >> rub;
 
-		double commissionbank = rub * commision;
+		commissionbank = rub * commision;
 		rub = rub - rub * commision;
 
 		std::cout << "Выберите валюту для обмена\n";
